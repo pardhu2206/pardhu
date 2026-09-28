@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Log in to your Roam & Reverie travel journal account.">
+  <title>Log in | Roam & Reverie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="auth-body">
+  <header class="auth-header">
+    <a class="brand" href="index.html"><span class="brand-mark">R</span> roam <span>&</span> reverie</a>
+    <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Back to stories</a>
+  </header>
+  <main class="auth-layout">
+    <aside class="auth-photo login-photo" aria-label="A mountain lake surrounded by forest">
+      <div class="auth-photo-caption"><span>Somewhere in the Dolomites</span><span>46° 42' N</span></div>
+    </aside>
+    <section class="auth-panel" aria-labelledby="auth-title">
+      <div class="auth-form-wrap">
+        <p class="eyebrow"><span></span> Welcome back</p>
+        <h1 id="auth-title">Pick up<br><em>where you left off.</em></h1>
+        <p class="auth-intro">Your next good read is just around the bend.</p>
+        <form class="auth-form" id="login-form" novalidate>
+          <label for="login-email">Email address</label>
+          <input id="login-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <label for="login-password">Password</label>
+          <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Your password" required>
+          <p class="form-message" id="form-message" aria-live="polite"></p>
+          <button class="button auth-button" type="submit">Log in <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="auth-switch">New around here? <a href="signup.html">Create an account</a></p>
+        <p class="demo-note">Demo site: accounts are saved only in this browser. This is not secure real-world authentication.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

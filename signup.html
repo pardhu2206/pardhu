@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create a Roam & Reverie account and follow along with travel stories.">
+  <title>Join the journal | Roam & Reverie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="auth-body">
+  <header class="auth-header">
+    <a class="brand" href="index.html"><span class="brand-mark">R</span> roam <span>&</span> reverie</a>
+    <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Back to stories</a>
+  </header>
+  <main class="auth-layout">
+    <aside class="auth-photo signup-photo" aria-label="A winding path through a green mountain valley">
+      <div class="auth-photo-caption"><span>Take the scenic route</span><span>Made for the curious</span></div>
+    </aside>
+    <section class="auth-panel" aria-labelledby="auth-title">
+      <div class="auth-form-wrap">
+        <p class="eyebrow"><span></span> Your next chapter</p>
+        <h1 id="auth-title">Make room<br><em>for the detours.</em></h1>
+        <p class="auth-intro">Create an account and keep your favorite stories close.</p>
+        <form class="auth-form" id="signup-form" novalidate>
+          <label for="signup-name">Your name</label>
+          <input id="signup-name" name="name" type="text" autocomplete="name" placeholder="Alex Morgan" required minlength="2">
+          <label for="signup-email">Email address</label>
+          <input id="signup-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <label for="signup-password">Password <span class="label-hint">At least 8 characters</span></label>
+          <input id="signup-password" name="password" type="password" autocomplete="new-password" placeholder="Create a password" required minlength="8">
+          <label for="signup-confirm">Confirm password</label>
+          <input id="signup-confirm" name="confirm-password" type="password" autocomplete="new-password" placeholder="Type it again" required>
+          <p class="form-message" id="form-message" aria-live="polite"></p>
+          <button class="button auth-button" type="submit">Create account <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+        <p class="demo-note">Demo site: accounts are saved only in this browser. This is not secure real-world authentication.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
